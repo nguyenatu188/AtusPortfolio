@@ -3,7 +3,7 @@ import { Canvas } from '@react-three/fiber'
 import { OrbitControls, Preload, useGLTF } from '@react-three/drei'
 import CanvasLoader from '../Loader' //Cái tên "CanvasLoader" đặt là tên gì cũng được, nó kiểu import Loader.jsx as *cái tên mik đặt*
 
-const Computers = () => {
+const Computers = ({ isMobile }) => {
   const computer = useGLTF('./desktop_pc/scene.gltf')
   return (
     <mesh>
@@ -25,8 +25,8 @@ const Computers = () => {
       />
       <primitive
         object={computer.scene}
-        scale={5.5}
-        position={[-4, -4.5, 1]}
+        scale={isMobile ? 3 : 5.5}
+        position={isMobile ? [-2, -3, 1] : [-4, -4.5, 1]}
         rotation={[-0.01, 0.4, -0.1]}
       />
     </mesh>
@@ -34,6 +34,23 @@ const Computers = () => {
 }
 
 const ComputersCanvas = () => {
+  const [isMobile, setIsMobile] = useState(false)
+
+  useEffect(() => {
+    // Thêm listener lắng nghe sự thay đổi kích cỡ màn hình
+    const mediaQuery = window.matchMedia('(max-width: 650px)')
+    // Đặt bằng tham số sự thay đổi kích cỡ môn hình
+    setIsMobile(mediaQuery.matches)
+    // Định nghĩa hàm callback sẽ sử dụng khi thay đổi kích cỡ môn hình
+    const handleMediaQueryChange = (event) => setIsMobile(event.matches)
+    // Đặt listener là hàm callback vừa tạo
+    mediaQuery.addEventListener('change', handleMediaQueryChange)
+    // Bỏ listener đi nếu component bị gỡ, ko sử dụng nữa (unmounted)
+    return () => {
+      mediaQuery.removeEventListener('change', handleMediaQueryChange)
+    }    
+  }, [])
+
   return (
     <Canvas
       frameloop='demand' /* chỉ update scene khi cần (khi người dùng dịch cam hoặc có j đó thay đổi), 
@@ -49,7 +66,7 @@ const ComputersCanvas = () => {
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 2}
         />
-        <Computers />
+        <Computers isMobile={isMobile} />
       </Suspense>
       <Preload all />
     </Canvas>
