@@ -25,7 +25,7 @@ const Navbar = () => {
           <img src={ logo } alt="logo" className='w-14 h-14 object-contain' />
           <p className='text-white text-[18px] font-bold cursor-pointer flex'>Nguyễn Anh Tú &nbsp;
             <span className='sm:block hidden' //giấu span ở máy nhỏ
-          >| Công ty trách nhiệm hữu hạn 1 người</span></p>
+          >| React developer</span></p>
         </Link>
         <ul className='list-none hidden sm:flex flex-row gap-10'>
           {navLinks.map((nav) => (

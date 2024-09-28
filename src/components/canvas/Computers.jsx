@@ -34,6 +34,8 @@ const Computers = ({ isMobile }) => {
 }
 
 const ComputersCanvas = () => {
+  // Dùng useState với useEffect và mediaQuery để handle responsive khi làm việc với threeJS,
+  // còn nếu code thuần react, html và css thì cứ dùng mấy cái tailwind classes như "hidden" và "sm:..." để handle responsive
   const [isMobile, setIsMobile] = useState(false)
 
   useEffect(() => {
