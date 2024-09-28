@@ -13,7 +13,9 @@
   color-scheme: dark;
 }
 
-/* phần ở giữa các phần, để transition giữa các phần mượt hơn */
+/* phần ở giữa các phần, để transition giữa các phần mượt hơn
+,do có cái navbar luôn đi theo dù kéo xuống hay lên, nên khi ấn vào id để chuyển sang section khác
+thì cái navbar ở trên cùng sẽ che nội dung ở phía trên của section */
 .hash-span {
   margin-top: -100px;
   padding-bottom: 100px;
@@ -54,10 +56,10 @@
   );
 }
 
-.green-pink-gradient {
+.cyan-violet-gradient {
   background: "#00cea8";
-  background: linear-gradient(90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
-  background: -webkit-linear-gradient(-90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
+  background: linear-gradient(90.13deg, #0090ce 1.9%, #b147f2 97.5%);
+  background: -webkit-linear-gradient(90.13deg, #0090ce 1.9%, #b147f2 97.5%);
 }
 
 .orange-text-gradient {

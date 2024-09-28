@@ -1,7 +1,7 @@
 import {
-  mobile,
+  fullstack,
   backend,
-  creator,
+  freelancer,
   web,
   javascript,
   typescript,
@@ -46,16 +46,16 @@ const services = [
     icon: web,
   },
   {
-    title: "React Native Developer",
-    icon: mobile,
+    title: "Fullstack developer",
+    icon: fullstack,
   },
   {
     title: "Backend Developer",
     icon: backend,
   },
   {
-    title: "Content Creator",
-    icon: creator,
+    title: "Freelancer",
+    icon: freelancer,
   },
 ];
 

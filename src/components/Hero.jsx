@@ -12,18 +12,18 @@ const Hero = () => {
         </div>
 
         <div>
-          <h1 className={`${styles.heroHeadText} text-white`}>Hola, Tôi là <span className='text-[#4287f5]'>Nguyễn Anh Tú</span></h1>
+          <h1 className={`${styles.heroHeadText} text-white`}>Hola, I'm <span className='text-[#4287f5]'>Nguyễn Anh Tú</span></h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            Tôi phát triển ứng dụng web responsive <br 
+            I develop responsive web applications <br 
             className='sm:block hidden'/>
-            thiết kế tốt, dễ sử dụng và nhanh
+            with appealing visuals, intuitive usability and creative interactivity
           </p>
         </div>
       </div>
 
       <ComputersCanvas/>
 
-      <div className='absolute bottom-10 w-full flex justify-center items-center'>
+      <div className='absolute bottom-10 w-full flex justify-center items-center z=30'>
         <a href='#about'>
           <div className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2'>
             <motion.div
