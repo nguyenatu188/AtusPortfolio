@@ -3,8 +3,8 @@ import { Canvas } from '@react-three/fiber'
 import { OrbitControls, Preload, useGLTF } from '@react-three/drei'
 import CanvasLoader from '../Loader' //Cái tên "CanvasLoader" đặt là tên gì cũng được, nó kiểu import Loader.jsx as *cái tên mik đặt*
 
-const Computers = ({ isMobile }) => {
-  const computer = useGLTF('./desktop_pc/scene.gltf')
+const Dog = ({ isMobile }) => {
+  const dog = useGLTF('./desktop_pc/scene.gltf')
   return (
     <mesh>
       <hemisphereLight
@@ -24,8 +24,8 @@ const Computers = ({ isMobile }) => {
         shadow-mapSize={1024} //chỉnh pixel
       />
       <primitive
-        object={computer.scene}
-        scale={isMobile ? 3 : 5.5}
+        object={dog.scene}
+        scale={isMobile ? 3 : 4.5}
         position={isMobile ? [-2, -3, 1] : [-4, -4.5, 1]}
         rotation={[-0.01, 0.4, -0.1]}
       />
@@ -33,7 +33,7 @@ const Computers = ({ isMobile }) => {
   )
 }
 
-const ComputersCanvas = () => {
+const DogCanvas = () => {
   // Dùng useState với useEffect và mediaQuery để handle responsive khi làm việc với threeJS,
   // còn nếu code thuần react, html và css thì cứ dùng mấy cái tailwind classes như "hidden" và "sm:..." để handle responsive
   const [isMobile, setIsMobile] = useState(false)
@@ -68,11 +68,11 @@ const ComputersCanvas = () => {
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 2}
         />
-        <Computers isMobile={isMobile} />
+        <Dog isMobile={isMobile} />
       </Suspense>
       <Preload all />
     </Canvas>
   )
 }
 
-export default ComputersCanvas
+export default DogCanvas
