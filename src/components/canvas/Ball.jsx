@@ -11,7 +11,7 @@ const Ball = (props) => {
       <ambientLight intensity={0.25} />
       <directionalLight position={[0, 0, 0.05]} />
       <mesh castShadow receiveShadow scale={2.75}>
-        <icosahedronGeometry args={[1, 1]} />
+        <icosahedronGeometry args={[1, 1]} /> {/* xuc sac 20 mat */}
         <meshStandardMaterial
           color='#fff8eb'
           polygonOffset

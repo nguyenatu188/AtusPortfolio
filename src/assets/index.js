@@ -8,7 +8,7 @@ import menu from "./menu.svg";
 import close from "./close.svg";
 
 import css from "./tech/css.png";
-import docker from "./tech/docker.png";
+import unity from "./tech/unity.png";
 import figma from "./tech/figma.png";
 import git from "./tech/git.png";
 import html from "./tech/html.png";
@@ -39,7 +39,7 @@ export {
   menu,
   close,
   css,
-  docker,
+  unity,
   figma,
   git,
   html,

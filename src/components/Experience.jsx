@@ -12,7 +12,7 @@ const ExperienceCard = ({ experience }) => {
   return (
     <VerticalTimelineElement
       contentStyle={{ background: '#1d1836', color: '#fff' }}
-      contentArrowStyle={{ borderRight: '7px solid #232631' }}
+      contentArrowStyle={{ borderRight: '10px solid #1d1836' }}
       date={experience.date}
       iconStyle={{ background: experience.iconBg }}
       icon={
@@ -35,7 +35,7 @@ const ExperienceCard = ({ experience }) => {
         </p>
       </div>
 
-      <ul className='mt-5 list-disc ml-5 space-y-2'>
+      <ul className='mt-5 list-disc ml-5 space-y-2'> {/**dùng list disc để có dấu chấm buleet ở trước*/}
         {experience.points.map((point, index) => (
           <li
             key={`experience-point-${index}`}
@@ -50,7 +50,7 @@ const ExperienceCard = ({ experience }) => {
 }
 const Experience = () => {
   return (
-    <>
+    <section>
       <motion.div
         variants={textVariant()}
       >
@@ -65,7 +65,7 @@ const Experience = () => {
           ))}
         </VerticalTimeline>
       </div>
-    </>
+    </section>
   )
 }
 

@@ -14,7 +14,7 @@ import {
   mongodb,
   git,
   figma,
-  docker,
+  unity,
   sedu,
   tinasoft,
   humanoi,
@@ -108,8 +108,8 @@ const technologies = [
     icon: figma,
   },
   {
-    name: "docker",
-    icon: docker,
+    name: "unity",
+    icon: unity,
   },
 ];
 
