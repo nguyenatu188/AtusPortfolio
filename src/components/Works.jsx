@@ -2,7 +2,7 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import { styles } from '../style'
 import { Tilt } from 'react-tilt'
-import { github } from '../assets'
+import { github, figma } from '../assets'
 import { SectionWrapper } from '../hoc'
 import { projects } from '../constants'
 import { fadeIn, textVariant } from '../utils/motion'
@@ -10,6 +10,9 @@ import { fadeIn, textVariant } from '../utils/motion'
 const ProjectCard = ({ index, name, description, tags, image, source_code_link }) => {
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+      {/* lí do mà mình pass giá trị delay là index * 0.5 là vì
+      index của các phần tử sẽ tăng dần 1,2,3,4... -> dẫn đến việc
+      các phần tử xuất hiện lần lượt nhau */}
       <Tilt
         options={{
           max: 45,
@@ -31,7 +34,7 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link }
               className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
             >
               <img
-                src={github}
+                src={tags.map(tag => tag.name) == "Figma" ? figma : github}
                 alt='source code'
                 className='w-1/2 h-1/2 object-contain'
               />
@@ -47,7 +50,7 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link }
         <div className='mt-4 flex flex-wrap gap-2'>
           {tags.map((tag) => (
             <p
-              key={`${name}-${tag.name}`}
+              key={`${tag.name}`}
               className={`text-[14px] ${tag.color}`}
             >
               #{tag.name}
@@ -89,4 +92,4 @@ const Works = () => {
   )
 }
 
-export default SectionWrapper(Works, "")
+export default SectionWrapper(Works, "work")

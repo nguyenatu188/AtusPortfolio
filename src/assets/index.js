@@ -21,13 +21,13 @@ import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 
-import humanoi from "./company/humanoi.png";
+import free from "./company/free.png";
 import sedu from "./company/sedu.png";
 import tinasoft from "./company/tinasoft.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import sellphones from "./sellphones.jpg";
+import elevenfs from "./elevenFs.jpg";
+import vnhd from "./vnhd.jpg";
 
 export {
   logo,
@@ -51,10 +51,10 @@ export {
   tailwind,
   typescript,
   threejs,
-  humanoi,
+  free,
   sedu,
   tinasoft,
-  carrent,
-  jobit,
-  tripguide,
+  sellphones,
+  elevenfs,
+  vnhd,
 };

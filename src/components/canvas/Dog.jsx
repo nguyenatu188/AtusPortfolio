@@ -4,7 +4,7 @@ import { OrbitControls, Preload, useGLTF } from '@react-three/drei'
 import CanvasLoader from '../Loader' //Cái tên "CanvasLoader" đặt là tên gì cũng được, nó kiểu import Loader.jsx as *cái tên mik đặt*
 
 const Dog = ({ isMobile }) => {
-  const dog = useGLTF('./desktop_pc/scene.gltf')
+  const dog = useGLTF('./dog/scene.gltf')
   return (
     <mesh>
       <hemisphereLight

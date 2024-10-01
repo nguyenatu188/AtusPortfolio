@@ -17,10 +17,10 @@ import {
   unity,
   sedu,
   tinasoft,
-  humanoi,
-  carrent,
-  jobit,
-  tripguide,
+  free,
+  sellphones,
+  elevenfs,
+  vnhd,
   threejs,
 } from "../assets";
 
@@ -140,8 +140,8 @@ const experiences = [
   },
   {
     title: "Web Developer",
-    company_name: "Humanoi",
-    icon: humanoi,
+    company_name: "Freelancer",
+    icon: free,
     iconBg: "#E6DEDD",
     date: "Present",
     points: [
@@ -182,67 +182,55 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "SellphoneS",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "This is a website that simulate a selling platform for mobile phone",
     tags: [
       {
-        name: "react",
+        name: "php",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "mysql",
+        color: "green-text-gradient",
+      },
+    ],
+    image: sellphones,
+    source_code_link: "https://github.com/nguyenatu188/Sellphones",
+  },
+  {
+    name: "Evelen FS",
+    description:
+      "This is a website that simulate a selling platform for clothes",
+    tags: [
+      {
+        name: "php",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "mysql",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "bootstrap",
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
+    image: elevenfs,
     source_code_link: "https://github.com/",
   },
   {
-    name: "Job IT",
+    name: "VNHD",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "This is a UX-UI design for an app that allows users to purchase tickets or view the showtimes of movies",
     tags: [
       {
-        name: "react",
+        name: "Figma",
         color: "blue-text-gradient",
       },
-      {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: vnhd,
+    source_code_link: "https://www.figma.com/design/SkmkCCooib03XhozZTVZoF/app-%C4%91%E1%BA%B7t-v%C3%A9-xem-phim-VNHD?node-id=0-1&node-type=canvas&t=J0vdKm5wi1rqF0L0-0",
   },
 ];
 
