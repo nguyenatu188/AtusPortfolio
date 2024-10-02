@@ -19,7 +19,7 @@ import {
   sellphones,
   trello,
   vnhd,
-  threejs,
+  three,
 } from "../assets";
 
 export const navLinks = [
@@ -87,7 +87,7 @@ const technologies = [
   },
   {
     name: "Three JS",
-    icon: threejs,
+    icon: three,
   },
   {
     name: "git",
