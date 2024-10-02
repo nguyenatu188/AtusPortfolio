@@ -1,7 +1,7 @@
 Model Information:
-* title:	Free Human Skull
-* source:	https://sketchfab.com/3d-models/free-human-skull-6a3c0f1b165a489db40c11912efe59c5
-* author:	riach (https://sketchfab.com/riach)
+* title:	Flux's Pit Stop
+* source:	https://sketchfab.com/3d-models/fluxs-pit-stop-6bb8bd116e384d9f9e7041dbb84e5e24
+* author:	Phil_XG (https://sketchfab.com/phil_xg)
 
 Model License:
 * license type:	SKETCHFAB Standard (https://sketchfab.com/licenses)

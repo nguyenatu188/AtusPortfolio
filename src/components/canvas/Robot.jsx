@@ -7,28 +7,14 @@ import { AmbientLight } from 'three'
 const Robot = () => {
   const robot = useGLTF('./robot/scene.gltf')
   return (
-    <mesh>
-      <hemisphereLight intensity={Math.PI * 10} groundColor='black' />
-      <spotLight
-        position={[-20, 50, 10]}
-        decay={0}
-        angle={0.12}
-        penumbra={1}
-        intensity={Math.PI * 10}
-        castShadow
-        shadow-mapSize={1024}
-      />
-      <pointLight decay={0} intensity={Math.PI * 10} />
-      <ambientLight decay={0} intensity={Math.PI * 10} />
       <primitive
         object={robot.scene}
-        scale={0.035}
-        position={[-0.5, -1.5, -0.5]}
+        scale={4.75}
+        position={[1, -2, 0]}
+        rotation-y={0}
       />
-    </mesh>
   )
 }
-
 
 const RobotCanvas = () => {
   return (
@@ -38,6 +24,7 @@ const RobotCanvas = () => {
       shadows
       dpr={[1, 2]} // 1 là default, nếu màn hình mà có độ phân giải cao thì set dpr = 2 để scene nhìn vẫn rõ
       gl={{ preserveDrawingBuffer: true }}
+      camera={{ position: [20, 3, 5], fov: 45, near: 0.1, far: 200 }}
     >
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls

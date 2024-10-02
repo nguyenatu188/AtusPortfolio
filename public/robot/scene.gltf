@@ -3,86 +3,142 @@
     {
       "bufferView": 2,
       "componentType": 5126,
-      "count": 25539,
+      "count": 19508,
       "max": [
-        1.365557074546814,
-        1.9443987607955933,
-        2.1173596382141113
+        26.05415916442871,
+        12.317350387573242,
+        35.7817497253418
       ],
       "min": [
-        -1.365557074546814,
-        -1.3752923011779785,
-        -1.063904047012329
+        -25.056739807128906,
+        -28.676509857177734,
+        -0.8394050002098083
       ],
       "type": "VEC3"
     },
     {
       "bufferView": 2,
-      "byteOffset": 306468,
+      "byteOffset": 234096,
       "componentType": 5126,
-      "count": 25539,
+      "count": 19508,
       "max": [
-        0.9999833703041077,
-        0.999998927116394,
-        0.9999766945838928
+        0.9986435770988464,
+        1.0,
+        1.0
       ],
       "min": [
-        -0.9999833703041077,
-        -0.9998492002487183,
-        -0.9999731183052063
+        -0.9986833930015564,
+        -0.9997373223304749,
+        -1.0
       ],
       "type": "VEC3"
     },
     {
       "bufferView": 1,
       "componentType": 5126,
-      "count": 25539,
+      "count": 19508,
       "max": [
-        1.0697180032730103,
-        0.9959589242935181
+        0.9495049715042114,
+        0.8869799971580505
       ],
       "min": [
-        -0.1094982922077179,
-        0.004042595624923706
+        0.050494998693466187,
+        0.11302000284194946
       ],
       "type": "VEC2"
     },
     {
       "bufferView": 0,
       "componentType": 5125,
-      "count": 148764,
+      "count": 33171,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 468192,
+      "componentType": 5126,
+      "count": 20041,
+      "max": [
+        26.05415916442871,
+        12.317350387573242,
+        35.7817497253418
+      ],
+      "min": [
+        -25.056739807128906,
+        -28.676509857177734,
+        -0.8394050002098083
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 708684,
+      "componentType": 5126,
+      "count": 20041,
+      "max": [
+        0.9986425042152405,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -0.9986843466758728,
+        -1.0,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 156064,
+      "componentType": 5126,
+      "count": 20041,
+      "max": [
+        0.9495049715042114,
+        0.8878729939460754
+      ],
+      "min": [
+        0.050494998693466187,
+        0.11212699860334396
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 132684,
+      "componentType": 5125,
+      "count": 34521,
       "type": "SCALAR"
     }
   ],
   "asset": {
     "extras": {
-      "author": "riach (https://sketchfab.com/riach)",
+      "author": "Phil_XG (https://sketchfab.com/phil_xg)",
       "license": "SKETCHFAB Standard (https://sketchfab.com/licenses)",
-      "source": "https://sketchfab.com/3d-models/free-human-skull-6a3c0f1b165a489db40c11912efe59c5",
-      "title": "Free Human Skull"
+      "source": "https://sketchfab.com/3d-models/fluxs-pit-stop-6bb8bd116e384d9f9e7041dbb84e5e24",
+      "title": "Flux's Pit Stop"
     },
-    "generator": "Sketchfab-16.12.0",
+    "generator": "Sketchfab-15.50.0",
     "version": "2.0"
   },
   "bufferViews": [
     {
       "buffer": 0,
-      "byteLength": 595056,
+      "byteLength": 270768,
       "name": "floatBufferViews",
       "target": 34963
     },
     {
       "buffer": 0,
-      "byteLength": 204312,
-      "byteOffset": 595056,
+      "byteLength": 316392,
+      "byteOffset": 270768,
       "byteStride": 8,
       "name": "floatBufferViews",
       "target": 34962
     },
     {
       "buffer": 0,
-      "byteLength": 612936,
-      "byteOffset": 799368,
+      "byteLength": 949176,
+      "byteOffset": 587160,
       "byteStride": 12,
       "name": "floatBufferViews",
       "target": 34962
@@ -90,42 +146,61 @@
   ],
   "buffers": [
     {
-      "byteLength": 1412304,
+      "byteLength": 1536336,
       "uri": "scene.bin"
     }
   ],
   "extensionsUsed": [
-    "KHR_materials_specular"
+    "KHR_materials_unlit"
+  ],
+  "images": [
+    {
+      "uri": "textures/Back_baseColor.jpeg"
+    },
+    {
+      "uri": "textures/Front_baseColor.jpeg"
+    },
+    {
+      "uri": "textures/Front_emissive.jpeg"
+    }
   ],
   "materials": [
     {
-      "doubleSided": true,
       "extensions": {
-        "KHR_materials_specular": {
-          "specularColorFactor": [
-            1.0,
-            1.0,
-            1.0
-          ],
-          "specularFactor": 0.6948497893219999
-        }
+        "KHR_materials_unlit": {}
       },
-      "name": "01_-_Default",
+      "name": "Back",
       "pbrMetallicRoughness": {
-        "baseColorFactor": [
-          0.002388993838743363,
-          0.002388993838743363,
-          0.002388993838743363,
-          1.0
-        ],
-        "metallicFactor": 0.6401282308520146,
-        "roughnessFactor": 0.20786744006469304
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicFactor": 0.0
+      }
+    },
+    {
+      "emissiveFactor": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emissiveTexture": {
+        "index": 2
+      },
+      "extensions": {
+        "KHR_materials_unlit": {}
+      },
+      "name": "Front",
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 1
+        },
+        "metallicFactor": 0.0
       }
     }
   ],
   "meshes": [
     {
-      "name": "Quad Sphere.001_01 - Default_0",
+      "name": "Object_0",
       "primitives": [
         {
           "attributes": {
@@ -138,6 +213,21 @@
           "mode": 4
         }
       ]
+    },
+    {
+      "name": "Object_1",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 5,
+            "POSITION": 4,
+            "TEXCOORD_0": 6
+          },
+          "indices": 7,
+          "material": 1,
+          "mode": 4
+        }
+      ]
     }
   ],
   "nodes": [
@@ -146,17 +236,17 @@
         1
       ],
       "matrix": [
-        1.0,
+        0.038737207651138306,
         0.0,
         0.0,
         0.0,
         0.0,
-        2.220446049250313e-16,
-        -1.0,
+        8.601387968795905e-18,
+        -0.038737207651138306,
         0.0,
         0.0,
-        1.0,
-        2.220446049250313e-16,
+        0.038737207651138306,
+        8.601387968795905e-18,
         0.0,
         0.0,
         0.0,
@@ -167,85 +257,26 @@
     },
     {
       "children": [
-        2
-      ],
-      "matrix": [
-        1.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        1.0,
-        0.0,
-        0.0,
-        -1.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        1.0
-      ],
-      "name": "c22fdc0bbb6c4a15a77ef2a32be63b58.fbx"
-    },
-    {
-      "children": [
+        2,
         3
       ],
-      "name": "RootNode"
-    },
-    {
-      "children": [
-        4
-      ],
-      "matrix": [
-        37.73584747314453,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        -4.498463567870203e-06,
-        -37.73584747314427,
-        0.0,
-        0.0,
-        37.73584747314427,
-        -4.498463567870203e-06,
-        0.0,
-        0.0,
-        21.276607513427734,
-        61.68366241455078,
-        1.0
-      ],
-      "name": "Quad Sphere.001"
-    },
-    {
-      "children": [
-        5
-      ],
-      "matrix": [
-        1.0,
-        0.0,
-        -0.0,
-        0.0,
-        0.0,
-        1.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        1.0,
-        0.0,
-        0.0,
-        1.515028476715088,
-        -0.6479107141494751,
-        1.0
-      ],
-      "name": "Object_4"
+      "name": "Holo_Final.obj.cleaner.materialmerger.gles"
     },
     {
       "mesh": 0,
-      "name": "Quad Sphere.001_01 - Default_0"
+      "name": "Object_2"
+    },
+    {
+      "mesh": 1,
+      "name": "Object_3"
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
     }
   ],
   "scene": 0,
@@ -255,6 +286,20 @@
       "nodes": [
         0
       ]
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0
+    },
+    {
+      "sampler": 0,
+      "source": 1
+    },
+    {
+      "sampler": 0,
+      "source": 2
     }
   ]
 }
