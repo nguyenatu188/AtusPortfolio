@@ -26,7 +26,7 @@ import sedu from "./company/sedu.png";
 import tinasoft from "./company/tinasoft.png";
 
 import sellphones from "./sellphones.jpg";
-import elevenfs from "./elevenFs.jpg";
+import trello from "./trello.jpg";
 import vnhd from "./vnhd.jpg";
 
 export {
@@ -55,6 +55,6 @@ export {
   sedu,
   tinasoft,
   sellphones,
-  elevenfs,
+  trello,
   vnhd,
 };

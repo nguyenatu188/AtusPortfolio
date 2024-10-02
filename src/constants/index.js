@@ -19,7 +19,7 @@ import {
   tinasoft,
   free,
   sellphones,
-  elevenfs,
+  trello,
   vnhd,
   threejs,
 } from "../assets";
@@ -172,27 +172,6 @@ const projects = [
     source_code_link: "https://github.com/nguyenatu188/Sellphones",
   },
   {
-    name: "Evelen FS",
-    description:
-      "This is a website that simulate a selling platform for clothes",
-    tags: [
-      {
-        name: "php",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mysql",
-        color: "green-text-gradient",
-      },
-      {
-        name: "bootstrap",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: elevenfs,
-    source_code_link: "https://github.com/",
-  },
-  {
     name: "VNHD",
     description:
       "This is a UX-UI design for an app that allows users to purchase tickets or view the showtimes of movies",
@@ -204,6 +183,23 @@ const projects = [
     ],
     image: vnhd,
     source_code_link: "https://www.figma.com/design/SkmkCCooib03XhozZTVZoF/app-%C4%91%E1%BA%B7t-v%C3%A9-xem-phim-VNHD?node-id=0-1&node-type=canvas&t=J0vdKm5wi1rqF0L0-0",
+  },
+  {
+    name: "Trello clone",
+    description:
+      "This is the front-end for a Trello clone where users can create boards and add cards to monitor the progress of their projects",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Material UI",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: trello,
+    source_code_link: "https://github.com/nguyenatu188/trello-web",
   },
 ];
 
