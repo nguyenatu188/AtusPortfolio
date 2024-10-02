@@ -25,8 +25,8 @@ const Dog = ({ isMobile }) => {
       />
       <primitive
         object={dog.scene}
-        scale={isMobile ? 3 : 4.5}
-        position={isMobile ? [-2, -4, 1] : [-4, -4.5, 1]}
+        scale={isMobile ? 2.5 : 4.5}
+        position={isMobile ? [-1.5, -3, 1] : [-4, -4.5, 1]}
         rotation={[-0.01, 0.4, -0.1]}
       />
     </mesh>
