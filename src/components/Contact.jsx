@@ -11,8 +11,6 @@ import { slideIn } from '../utils/motion'
 // service_2v4kx5f
 // NjNXQwLgd3e41T4RR
 
-
-
 const Contact = () => {
   const formRef = useRef()
   const [form, setForm] = useState({
@@ -71,7 +69,7 @@ const Contact = () => {
         >
           <p className={styles.sectionSubText}>Get in touch</p>
           <h3 className={styles.sectionHeadText}>Contact.</h3>
-          
+
           <form
             ref={formRef}
             onSubmit={handleSubmit}
