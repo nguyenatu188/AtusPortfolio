@@ -12,6 +12,7 @@ import { slideIn } from '../utils/motion'
 // NjNXQwLgd3e41T4RR
 
 
+
 const Contact = () => {
   const formRef = useRef()
   const [form, setForm] = useState({
@@ -23,7 +24,8 @@ const Contact = () => {
   const [loading, setLoading] = useState(false)
 
   const handleChange = (e) => {
-    const { name, value } = e.target
+    const {target} = e
+    const { name, value } = target
     setForm({ ...form, [name]: value })
   }
   const handleSubmit = (e) => {

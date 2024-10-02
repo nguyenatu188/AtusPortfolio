@@ -26,7 +26,7 @@ const Dog = ({ isMobile }) => {
       <primitive
         object={dog.scene}
         scale={isMobile ? 3 : 4.5}
-        position={isMobile ? [-2, -3, 1] : [-4, -4.5, 1]}
+        position={isMobile ? [-2, -4, 1] : [-4, -4.5, 1]}
         rotation={[-0.01, 0.4, -0.1]}
       />
     </mesh>
@@ -40,7 +40,7 @@ const DogCanvas = () => {
 
   useEffect(() => {
     // Thêm listener lắng nghe sự thay đổi kích cỡ màn hình
-    const mediaQuery = window.matchMedia('(max-width: 650px)')
+    const mediaQuery = window.matchMedia('(max-width: 700px)')
     // Đặt bằng tham số sự thay đổi kích cỡ môn hình
     setIsMobile(mediaQuery.matches)
     // Định nghĩa hàm callback sẽ sử dụng khi thay đổi kích cỡ môn hình
