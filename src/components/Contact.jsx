@@ -11,6 +11,7 @@ import { slideIn } from '../utils/motion'
 // service_2v4kx5f
 // NjNXQwLgd3e41T4RR
 
+
 const Contact = () => {
   const formRef = useRef()
   const [form, setForm] = useState({
@@ -26,13 +27,14 @@ const Contact = () => {
     const { name, value } = target
     setForm({ ...form, [name]: value })
   }
+
   const handleSubmit = (e) => {
     e.preventDefault()
     setLoading(true)
 
     emailjs.send(
-      'service_2v4kx5f',
-      'template_lhdxgeg',
+      'service_2v4kx5f', // emailJS service ID
+      'template_lhdxgeg', //template ID
       {
         from_name: form.name,
         to_name: 'Nguyễn Anh Tú',
@@ -40,7 +42,7 @@ const Contact = () => {
         to_email: 'nnguyentu13@gmail.com',
         message: form.message,
       },
-      'NjNXQwLgd3e41T4RR'
+      'NjNXQwLgd3e41T4RR' //public key for emailJS account
     )
       .then(() => {
         setLoading(false)
@@ -62,6 +64,7 @@ const Contact = () => {
 
   return (
     <>
+      {/* flex-row để form bên trái, robot bên phải, nếu màn hình ko to thì flex-col-reverse để robot ở trên, form bên dưới */  }
       <div className='xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden'>
         <motion.div
           variants={slideIn('left', "tween", 0.2, 1)}

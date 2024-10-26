@@ -15,8 +15,8 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link }
       các phần tử xuất hiện lần lượt nhau */}
       <Tilt
         options={{
-          max: 45,
-          scale: 1,
+          max: 45, // angle
+          scale: 1, // mức độ phóng to thu nhỏ
           speed: 450,
         }}
         className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full'
@@ -25,7 +25,7 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link }
           <img
             src={image}
             alt='project_image'
-            className='w-full h-full object-cover rounded-2xl'
+            className='w-full h-full object-cover rounded-2xl' // để w và h là full nma ảnh ko chạm viền vì đã có p-5
           />
 
           <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
@@ -75,8 +75,8 @@ const Works = () => {
           variants={fadeIn("", "", 0.1, 1)}
           className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
         >
-          Following projects showcasing my skills and experience through my previous works. Each project is briefly described
-          with links to it. It reflects my ability to solve complex problems, work with different technologies, and manage projects effectively.
+          Following projects showcases my skills and experience through my previous works. Each project is briefly described
+          with links attached to it on the top right corner. It reflects my ability to solve real-world problems, work with different technologies.
         </motion.p>
       </div>
 
