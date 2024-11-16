@@ -53,7 +53,7 @@ const Navbar = () => {
             <span className='sm:block hidden'>| React developer</span>
           </p>
         </Link>
-        <ul className='list-none hidden sm:flex flex-row gap-10'>
+        <ul className='list-none max-sm:hidden sm:flex flex-row gap-10'>
           {navLinks.map((nav) => (
             <li
               key={nav.id}

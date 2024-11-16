@@ -16,7 +16,7 @@ import {
   sedu,
   tinasoft,
   free,
-  sellphones,
+  dk,
   trello,
   vnhd,
   three,
@@ -145,21 +145,25 @@ const experiences = [
 
 const projects = [
   {
-    name: "SellphoneS",
+    name: "Dar Knight promo",
     description:
-      "This is a website that simulate a selling platform for mobile phone",
+      "This is a website that promotes a game called 'Dar Knight'. The website is built with React.js and Tailwind CSS.",
     tags: [
       {
-        name: "php",
+        name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "mysql",
-        color: "green-text-gradient",
+        name: "tailwind",
+        color: "pink-text-gradient",
       },
+      {
+        name: "threeJS",
+        color: "green-text-gradient",
+      }
     ],
-    image: sellphones,
-    source_code_link: "https://github.com/nguyenatu188/Sellphones",
+    image: dk,
+    source_code_link: "https://github.com/nguyenatu188/darKnight_promo",
   },
   {
     name: "VNHD",

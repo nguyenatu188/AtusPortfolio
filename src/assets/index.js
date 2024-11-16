@@ -23,7 +23,7 @@ import free from "./company/free.png";
 import sedu from "./company/sedu.png";
 import tinasoft from "./company/tinasoft.png";
 
-import sellphones from "./sellphones.jpg";
+import dk from "./dk.jpg";
 import trello from "./trello.jpg";
 import vnhd from "./vnhd.jpg";
 
@@ -50,7 +50,7 @@ export {
   free,
   sedu,
   tinasoft,
-  sellphones,
+  dk,
   trello,
   vnhd,
 };
